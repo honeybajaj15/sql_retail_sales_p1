@@ -18,10 +18,31 @@ total_sale FLOAT);
 SELECT * FROM retail_sales;
 SELECT COUNT(*) FROM retail_sales;
 
-select * FROM retail_sales
-WHERE sale_date IS NULL;
-
 SELECT * FROM retail_sales
+WHERE 
+transactions_id IS NULL
+or
+sale_date is null
+or 
+sale_time is null
+or 
+customer_id is null
+or
+gender is null
+or
+age is null
+or
+category is null
+or 
+quantity is null
+or
+price_per_unit is null
+or 
+cogs is null
+or
+total_sale is null;
+
+DELETE FROM retail_sales
 WHERE 
 transactions_id IS NULL
 or
@@ -62,10 +83,7 @@ Select distinct(category) as category from retail_sales;
 SELECT * FROM retail_sales
 where sale_date = '2022-11-05';
 
--- que 2 Write a SQL query to retrieve all transactions where the category is 'clothing' and the quantity sold is more than 10 
-
-SELECT * FROM retail_sales
-where category = 'Clothing' AND quantity >'10';
+-- que 2 Write a SQL query to retrieve all transactions where the category is 'clothing' and the quantity sold is more than 4
 
 SELECT category, 
 count(quantity) 
