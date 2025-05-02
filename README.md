@@ -72,22 +72,18 @@ The following SQL queries were developed to answer specific business questions:
 
 1. **Write a SQL query to retrieve all columns for sales made on '2022-11-05**:
 ```sql
-SELECT *
-FROM retail_sales
-WHERE sale_date = '2022-11-05';
+SELECT * FROM retail_sales
+where sale_date = '2022-11-05';
 ```
 
-2. **Write a SQL query to retrieve all transactions where the category is 'Clothing' and the quantity sold is more than 4 in the month of Nov-2022**:
+2. **Write a SQL query to retrieve all transactions where the category is 'clothing' and the quantity sold is more than 4**:
 ```sql
-SELECT 
-  *
-FROM retail_sales
-WHERE 
-    category = 'Clothing'
-    AND 
-    TO_CHAR(sale_date, 'YYYY-MM') = '2022-11'
-    AND
-    quantity >= 4
+SELECT category, 
+count(quantity) 
+from retail_sales
+where category = 'Clothing'
+AND 
+quantity>=4;
 ```
 
 3. **Write a SQL query to calculate the total sales (total_sale) for each category.**:
@@ -147,7 +143,7 @@ GROUP BY 1, 2
 WHERE rank = 1
 ```
 
-8. **Write a SQL query to find the top 5 customers based on the highest total sales **:
+8. **Write a SQL query to find the top 5 customers based on the highest total sales**:
 ```sql
 SELECT 
     customer_id,
@@ -211,7 +207,7 @@ This project serves as a comprehensive introduction to SQL for data analysts, co
 3. **Run the Queries**: Use the SQL queries provided in the `analysis_queries.sql` file to perform your analysis.
 4. **Explore and Modify**: Feel free to modify the queries to explore different aspects of the dataset or answer additional business questions.
 
-## Author - Zero Analyst
+## Author - Honey Bajaj
 
 This project is part of my portfolio, showcasing the SQL skills essential for data analyst roles. If you have any questions, feedback, or would like to collaborate, feel free to get in touch!
 
@@ -219,9 +215,9 @@ This project is part of my portfolio, showcasing the SQL skills essential for da
 
 For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
 
-- **YouTube**: [Subscribe to my channel for tutorials and insights](https://www.youtube.com/@zero_analyst)
-- **Instagram**: [Follow me for daily tips and updates](https://www.instagram.com/zero_analyst/)
-- **LinkedIn**: [Connect with me professionally](https://www.linkedin.com/in/najirr)
-- **Discord**: [Join our community to learn and grow together](https://discord.gg/36h5f2Z5PK)
+- **Gmail**: [Maintain communocation via gmail](honeybajaj1584@gmail.com)
+- 
+- **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/honeybajaj)
+- 
 
 Thank you for your support, and I look forward to connecting with you!
