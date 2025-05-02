@@ -216,8 +216,6 @@ This project is part of my portfolio, showcasing the SQL skills essential for da
 For more content on SQL, data analysis, and other data-related topics, make sure to follow me on social media and join our community:
 
 - **Gmail**: [Maintain communocation via gmail](honeybajaj1584@gmail.com)
-- 
 - **LinkedIn**: [Connect with me professionally](www.linkedin.com/in/honeybajaj)
-- 
-
+  
 Thank you for your support, and I look forward to connecting with you!
