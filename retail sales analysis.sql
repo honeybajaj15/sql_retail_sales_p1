@@ -142,9 +142,11 @@ limit 5;
 
 -- que 9. Write a SQL query to find the number of unique customers who purchased items from each category.
 
-Select count(DISTINCT(customer_id)), category
-from retail_sales
-group by category;
+SELECT 
+    category,    
+    COUNT(DISTINCT customer_id) as cnt_unique_cs
+FROM retail_sales
+GROUP BY category;
 
 -- que 10. Write a SQL query to create each shift and number of orders (Example Morning<12, Afternoon betweem 12 & 17, Evening> 17).
 
